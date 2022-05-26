@@ -1,0 +1,59 @@
+:root {
+    --black-color: #333333;
+    --orange-color: #F07566;
+    --green-color: #4DB282;
+}
+
+body {
+    font-family: 'Hind Siliguri', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+
+.header-inner {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	position: relative;
+}
+
+.header-logo {
+    font-size: 40px;
+    font-family: 'Hind Siliguri';
+    font-weight: 700;
+    letter-spacing: -1px;
+    color: var(--black-color);
+    text-decoration: none;
+}
+
+.nav {
+    display: none;
+}
+
+.burger-icon {
+    width: 48px;
+    height: 48px;
+    border: none;
+    border-radius: 50%;
+    background: var(--orange-color);
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 6px;
+    align-items: center;
+}
+
+.burger-icon-inner,
+.burger-icon:before,
+.burger-icon:after {
+    content: '';
+    width: 22px;
+    height: 2px;
+    border-radius: 2px;
+    background: #D8D8D8;
+}
