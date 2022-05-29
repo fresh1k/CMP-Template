@@ -2,6 +2,7 @@
     --black-color: #333333;
     --orange-color: #F07566;
     --green-color: #4DB282;
+    --gray-color: #D8D8D8;
 }
 
 * {
@@ -67,7 +68,7 @@ ul {
         width: 22px;
         height: 2px;
         border-radius: 2px;
-        background: #D8D8D8;
+        background: var(--gray-color);
     }
     
     .header.menu-open {
@@ -187,7 +188,7 @@ ul {
     
     .main-heading > span {
         display: block;
-        color: #4fb282;
+        color: var(--green-color);
     }
     
     .sub-heading {
@@ -227,7 +228,6 @@ ul {
     }
     
     .about-heading {
-        width: 230px;
         font-size: 40px;
         line-height: 48px;
     }
@@ -269,8 +269,139 @@ ul {
     }
 
     .card-text {
-        width: 206px;
         line-height: 32px;
         color: rgba(51, 51, 51, 0.496405);
     }
+
+    .features-text {
+        line-height: 32px;
+    }
+
+    .card-features {
+        margin-top: 13px;
+        padding: 25px 40px 0 32px;
+        width: 329px;
+        height: 160px;
+        box-shadow: 0px 24px 48px rgba(0, 17, 86, 0.0799083);
+        border-radius: 8px;
+    }
+
+    .card-features .card-heading {
+        padding-left: 16px;
+        display: inline;
+    }
+
+    .card-features .card-text {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .rectangle {
+        margin-top: 78px;
+    }
+    
+    /* Portfolio */
+
+    .block-portfolio {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .block-portfolio .card-text {
+        text-align: center;
+    }
+
+    .portfolio-card {
+        margin: 45px 0 27px 0;
+        width: 329px;
+        height: 222px;
+        background: var(--gray-color);
+        border-radius: 8px;
+        position: relative;
+    }
+
+    .portfolio-card-sm {
+        width: 96px;
+        height: 96px;
+        background: var(--green-color);
+        border-radius: 0 25px 0 0;
+        position: absolute;
+        bottom: 0;
+    }
+
+    .portfolio-card-number {
+        font-size: 40px;
+        font-family: 'Hind Siliguri';
+        font-weight: 700;
+        line-height: 48px;
+        letter-spacing: -1px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #fff;
+    }
+
+    .portfolio-card-text {
+        text-align: center;
+    }
+
+    .portfolio-btn {
+        margin: 53px 0 98px 0;
+        padding: 11px 33px;
+        font-size: 16px;
+        font-family: 'Hind Siliguri';
+        font-weight: 700;
+        letter-spacing: -1px;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: var(--orange-color);
+        border: 1px solid rgba(240, 117, 102, 0.23);
+        border-radius: 8px;
+    }
+
+    .portfolio-companies {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 51px;
+    }
+    .portfolio-companies:nth-child(2n){
+        flex-wrap: wrap;
+    }
+
+    /* Block Service */
+
+    .block-service {
+        margin-top: 170px;
+    }
+
+    .service-clients {
+        margin-top: 41px;
+        position: relative;
+    }
+
+    .service-img {
+        padding: 15px;
+        border-radius: 8px;
+        background: #FFFAEA;
+    }
+
+    .service-clients .about-heading {
+        display: inline;
+    }
+
+    .service-clients .card-text {
+        text-align: center;
+    }
+
+    .service-img-successfull {
+        padding: 15px;
+        border-radius: 8px;
+        background: #EEF6FF;
+    }
+
 }
