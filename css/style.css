@@ -388,14 +388,17 @@ ul {
         padding: 15px;
         border-radius: 8px;
         background: #FFFAEA;
+        position: relative;
     }
 
     .service-clients .about-heading {
-        display: inline;
+        display: inline-block;
+        position: absolute;
+        left: 80px;
     }
 
     .service-clients .card-text {
-        text-align: center;
+        padding-left: 80px;
     }
 
     .service-img-successfull {
@@ -404,4 +407,59 @@ ul {
         background: #EEF6FF;
     }
 
+    .service-video {
+        margin-top: 176px;
+        width: 375px;
+        height: 767px;
+        background-color: var(--orange-color);
+    }
+
+    .service-video .about-heading {
+        width: 51%;
+        color: #fff;
+    }
+
+    .service-video .main-text {
+        padding-top: 13px;
+        color: #fff;
+    }
+
+    /* Block Team */
+
+    .block-team {
+        margin-top: 140px;
+    }
+
+    .block-center {
+        text-align: center;
+    }
+
+    .carousel {
+        width: 329px;
+        height: 448px;
+        box-shadow: 0px 24px 48px rgba(0, 17, 86, 0.0799083);
+        border-radius: 8px;
+    }
+
+    .carousel-img {
+        padding-left: 16px;
+    }
+
+    .slider-team h2, p {
+        padding-left: 32px;
+    }
+
+    .slider-team .sub-heading{
+        margin-top: 25;
+    }
+
+    .slick-dots li button:before {
+        font-size: 30px;
+        color: #FFE4E1;
+    }
+
+    .slick-dots li.slick-active button:before {
+        font-size: 50px;
+        color: var(--orange-color);
+    }
 }
