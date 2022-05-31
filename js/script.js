@@ -13,4 +13,8 @@ $(document).ready(function(){
         arrows: false,
         dots: true,
     });
+    $('.reviews').slick({
+        arrows: true,
+        dots: false,
+    });
 });
