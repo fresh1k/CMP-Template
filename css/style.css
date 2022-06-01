@@ -20,7 +20,7 @@ ul {
 
 @media screen and (min-width: 375px) {
     #container {
-        /* max-width: 357px; */
+        max-width: 100%;
         margin: 0 auto;
     }
     .header {
@@ -33,14 +33,17 @@ ul {
         align-items: center;
         position: relative;
     }
-    
-    .header-logo {
+
+    .logo {
         font-size: 40px;
         font-family: 'Hind Siliguri';
         font-weight: 700;
         letter-spacing: -1px;
         color: var(--black-color);
         text-decoration: none;
+    }
+    
+    .header-logo {
         /* position: fixed;
         left: 5px;
         top: 5px; */
@@ -171,7 +174,6 @@ ul {
     }
     
     .main-link {
-        padding-left: 12px;
         display: inline-flex;
         text-decoration: none;
         text-transform: uppercase;
@@ -355,9 +357,8 @@ ul {
         text-align: center;
     }
 
-    .portfolio-btn {
-        margin: 53px 0 98px 0;
-        padding: 11px 33px;
+    .btn-empty{
+        padding: 15px 33px;
         font-size: 16px;
         font-family: 'Hind Siliguri';
         font-weight: 700;
@@ -368,6 +369,11 @@ ul {
         color: var(--orange-color);
         border: 1px solid rgba(240, 117, 102, 0.23);
         border-radius: 8px;
+    }
+
+    .portfolio-btn {
+        margin: 53px 0 98px 0;
+
     }
 
     .portfolio-companies {
@@ -559,5 +565,125 @@ ul {
         .newsletter .main-btn {
             border: none;
             font-size: 16px;
+        }
+
+        .latest-articles {
+            margin-top: 187px;
+        }
+
+
+        .main-article {
+            margin-top: 45px;
+        }
+
+        .article {
+            margin-top: 16px;
+            padding: 16px;
+            width: 329px;
+            border-radius: 8px;
+            border: 1px solid #E6EDF5;
+        }
+        .article .about-heading {
+            padding: 25px 16px 13px 16px;
+        }
+        .article .main-text {
+            padding: 13px 16px 47px 16px;
+        }
+        .gray-rectangle {
+            width: 296px;
+            height: 180px;
+            background-color: var(--gray-color);
+            border-radius: 0 0 30px 0;
+        }
+
+        .latest-articles .articles-btn {
+            margin-top: 64px;
+            margin-left: 73px;
+            width: 170px;
+            height: 48px;
+            display: inline-block;
+        }
+
+
+        .footer {
+            padding-left: 23px;
+            margin-top: 112px;
+            height: 1184px;
+            width: 100%;
+            background-color: #494949;
+        }
+
+        .footer-logo {
+            display: block;
+            padding-top: 76px;
+            color: #fff;
+        }
+
+        .footer .main-link {
+            padding: 63px 0 32px 0;
+            display: block;
+        }
+
+        .footer-nav-items {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-direction: column;
+        }
+
+        .footer-nav-item-link {
+            font-size: 16px;
+            line-height: 32px;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .footer-socials {
+            display: flex;
+            align-items: center;
+        }
+
+        .footer-social {
+            margin-right: 8px;
+            width: 48px;
+            height: 48px;
+            background-color: var(--orange-color);
+            border-radius: 50%;
+            position: relative;
+        }
+
+        .footer-icon {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .footer-line {
+            display: block;
+            margin-top: 80px;
+            width: 90%;
+            height: 1px;
+            background-color: #fff;
+            opacity: 10%;
+        }
+
+        .footer .card-text {
+            margin-top: 58px;
+            text-align: center;
+            color: #fff;
+            opacity: 0.5;
+            overflow-wrap: break-word;
+        }
+
+        .footer .card-text > span {
+            display: block;
+        }
+
+        .footer-regulations {
+            margin-top: 32px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
         }
 }
