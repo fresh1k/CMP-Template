@@ -18,9 +18,9 @@ ul {
     list-style: none;
 }
 
-@media screen and (max-width: 375px) {
+@media only screen and (max-width: 375px) {
     #container {
-        max-width: 100%;
+        width: 100%;
         margin: 0 auto;
     }
     .header {
@@ -75,6 +75,10 @@ ul {
         height: 2px;
         border-radius: 2px;
         background: var(--gray-color);
+    }
+
+    .header-btn {
+        display: none;
     }
     
     .header.menu-open {
@@ -310,13 +314,6 @@ ul {
     }
     
     /* Portfolio */
-
-    .block-portfolio {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
 
     .block-portfolio .card-text {
         text-align: center;
@@ -688,8 +685,7 @@ ul {
         }
 }
 
-
-@media screen and (max-width: 1440px) {
+@media screen and (min-width: 1440px) {
     #container {
         max-width: 1300px;
         margin: 0 auto;
@@ -945,7 +941,7 @@ ul {
     /* Portfolio */
 
     .block-portfolio {
-        display: block
+        margin-top: 220px;
     }
 
     .block-portfolio .card-text {
@@ -953,11 +949,15 @@ ul {
     }
 
     .portfolio-cards {
-        display: inline-block;
-        margin-right: 0;
+        margin-top: 61px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
     }
 
     .portfolio-card {
+        margin-bottom: 144px;
         width: 570px;
         height: 384px;
         background: var(--gray-color);
@@ -989,6 +989,9 @@ ul {
 
     .portfolio-card-text {
         text-align: center;
+        position: absolute;
+        top: 105%;
+        left: 30%;
     }
 
     .btn-empty{
@@ -1006,46 +1009,53 @@ ul {
     }
 
     .portfolio-btn {
-        margin: 53px 0 98px 0;
-
+        display: inline-block;
+        position: absolute;
+        left: 45%;
     }
 
     .portfolio-companies {
+        margin-top: 144px;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
-        gap: 51px;
+        gap: 57px;
     }
-    .portfolio-companies:nth-child(2n){
-        flex-wrap: wrap;
-    }
-
     /* Block Service */
 
     .block-service {
         margin-top: 170px;
+        position: relative;
     }
 
     .service-clients {
-        margin-top: 41px;
-        position: relative;
+        display: flex;
+        /* justify-content: flex-start;
+        align-items: center;
+        margin-top: 41px; */
+    }
+    .service-client {
+        margin-right: 90px;
+        display: flex;
+        align-items: center;
+        gap: 24px;
     }
 
     .service-img {
         padding: 15px;
         border-radius: 8px;
         background: #FFFAEA;
-        position: relative;
     }
 
-    .service-clients .about-heading {
-        display: inline-block;
-        position: absolute;
-        left: 80px;
+    .service-client .about-heading {
+        display: inline;
+        /* position: absolute;
+        left: 80px; */
     }
 
-    .service-clients .card-text {
-        padding-left: 80px;
+    .block-service .card-text {
+        display: inline;
+        padding-left: 0;
     }
 
     .service-img-successfull {
@@ -1054,20 +1064,38 @@ ul {
         background: #EEF6FF;
     }
 
-    .service-video {
-        margin-top: 176px;
-        height: 767px;
-        background-color: var(--orange-color);
+    .service-rectangle {
+        position: absolute;
+        right: 0;
+        top: 0;
     }
 
-    .service-video .about-heading {
-        width: 51%;
+    .service-video {
+        margin-top: 176px;
+        height: 384px;
+        background-color: var(--orange-color);
+        position: relative;
+    }
+
+    .service-video-img {
+        position: absolute;
+        top: -16%;
+    }
+
+    .service-video-heading {
+        font-size: 56px;
         color: #fff;
+        position: absolute;
+        left: 50%;
+        top: 22%;
     }
 
     .service-video .main-text {
-        padding-top: 13px;
+        padding: 0;
         color: #fff;
+        position: absolute;
+        left: 50%;
+        top: 60%;
     }
 
     /* Block Team */
@@ -1078,6 +1106,10 @@ ul {
 
     .block-center {
         text-align: center;
+    }
+
+    .team-heading {
+        font-size: 56px;
     }
 
     .carousel {
