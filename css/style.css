@@ -18,7 +18,7 @@ ul {
     list-style: none;
 }
 
-@media screen and (min-width: 375px) {
+@media screen and (max-width: 375px) {
     #container {
         max-width: 100%;
         margin: 0 auto;
@@ -686,4 +686,556 @@ ul {
             justify-content: space-around;
             align-items: center;
         }
+}
+
+
+@media screen and (max-width: 1440px) {
+    #container {
+        max-width: 1300px;
+        margin: 0 auto;
+    }
+
+    /* Header */
+
+    .header {
+        padding: 0;
+    }
+    
+    .header-inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+    }
+
+    .logo {
+        font-size: 40px;
+        font-family: 'Hind Siliguri';
+        font-weight: 700;
+        letter-spacing: -1px;
+        color: var(--black-color);
+        text-decoration: none;
+    }
+    
+    .nav {
+        display: flex;
+        margin-left: 42px;
+    }
+    
+    .burger-icon {
+        display: none;
+    }
+
+    .nav-items {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav-item-link {
+        margin-right: 54px;
+        text-decoration: none;
+        color: var(--black-color);    
+    }
+
+    .header-btn {
+        margin-top: 16px;
+    }
+
+    /* Main */
+    
+    .main {
+        padding: 0;
+    }
+    
+    .main-inner {
+        padding-top: 0;
+        position: relative;
+    }
+
+    .block-company {
+        margin-top: 187px;
+    }
+
+    .company-rectangle {
+        position: absolute;
+        right: 0;
+        top: 67px;
+    }
+
+    .main-circle {
+        display: inline-flex;
+        align-items: center;
+        width: 12px;
+        height: 12px;
+        background: var(--orange-color);
+        border-radius: 50%;
+    }
+    
+    .main-link {
+        
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: 'Hind Siliguri';
+        line-height: 32px;
+        letter-spacing: 1px;
+        color: var(--orange-color);
+    }
+    
+    .heading {
+        font-family: 'Hind Siliguri';
+        letter-spacing: -1px;
+        color: var(--black-color);
+    }
+    
+    .main-heading {
+        width: 100%;
+        font-size: 72px;
+        line-height: 80px;
+    }
+    
+    .main-heading > span {
+        display: block;
+        color: var(--green-color);
+    }
+    
+    .sub-heading {
+        margin-top: 13px;
+        font-size: 24px;
+        line-height: 32px;
+        mix-blend-mode: normal;
+        opacity: 0.9;
+    }
+    
+    .main-text {
+        padding: 32px 0;
+        width: 100%;
+        font-size: 20px;
+        font-family: 'Work Sans';
+        line-height: 32px;
+        color: var(--black-color);
+        overflow: hidden;
+    }
+
+    .text-wrap {
+        display: block;
+    }
+    
+    .main-btn {
+        display: inline-block;
+        margin-top: 32px;
+        padding: 11px 40px;
+        background-color: var(--orange-color);
+        border-radius: 5px;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #fff;
+        font-family: 'Hind Siliguri';
+        letter-spacing: 1px;
+        line-height: 26px;
+    }
+
+    /* Block About */
+    
+    .block-about {
+        margin-top: 140px;
+        position: relative;
+    }
+
+    .about-absolute {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    
+    .about-heading {
+        font-size: 40px;
+        line-height: 48px;
+    }
+    
+    .about-items {
+        padding-top: 18px;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+    
+    .about-items > li {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .cards {
+        margin: 264px 0 304px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .card {
+        margin: 0;
+        padding-left: 32px;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        width: 270px;
+        height: 368px;
+        border: 1px solid #E6EDF5;
+        border-radius: 8px;
+        box-shadow: 0px 24px 48px rgba(0, 17, 86, 0.0799083);
+    }
+
+    .card-img {
+        width: 64px;
+        height: 64px;
+    }
+
+    .card-heading {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .card-text {
+        line-height: 32px;
+        color: rgba(51, 51, 51, 0.496405);
+    }
+
+    /* Block Features */
+
+    .block-features {
+        position: relative;
+    }
+
+    .features-heading {
+        font-size: 56px;
+    }
+
+    .features-text {
+        line-height: 32px;
+    }
+
+    .card-features {
+        margin-top: 13px;
+        padding: 25px 40px 0 32px;
+        width: 470px;
+        height: 144px;
+        box-shadow: 0px 24px 48px rgba(0, 17, 86, 0.0799083);
+        border-radius: 8px;
+    }
+
+    .card-features .card-heading {
+        padding-left: 16px;
+        display: inline;
+    }
+
+    .card-features .card-text {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .features-rectangle {
+        margin-top: 78px;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    
+    /* Portfolio */
+
+    .block-portfolio {
+        display: block
+    }
+
+    .block-portfolio .card-text {
+        text-align: center;
+    }
+
+    .portfolio-cards {
+        display: inline-block;
+        margin-right: 0;
+    }
+
+    .portfolio-card {
+        width: 570px;
+        height: 384px;
+        background: var(--gray-color);
+        border-radius: 8px;
+        position: relative;
+    }
+
+    .portfolio-card-sm {
+        width: 96px;
+        height: 96px;
+        background: var(--green-color);
+        border-radius: 0 25px 0 0;
+        position: absolute;
+        bottom: 0;
+    }
+
+    .portfolio-card-number {
+        font-size: 40px;
+        font-family: 'Hind Siliguri';
+        font-weight: 700;
+        line-height: 48px;
+        letter-spacing: -1px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #fff;
+    }
+
+    .portfolio-card-text {
+        text-align: center;
+    }
+
+    .btn-empty{
+        padding: 15px 33px;
+        font-size: 16px;
+        font-family: 'Hind Siliguri';
+        font-weight: 700;
+        letter-spacing: -1px;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: var(--orange-color);
+        border: 1px solid rgba(240, 117, 102, 0.23);
+        border-radius: 8px;
+    }
+
+    .portfolio-btn {
+        margin: 53px 0 98px 0;
+
+    }
+
+    .portfolio-companies {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 51px;
+    }
+    .portfolio-companies:nth-child(2n){
+        flex-wrap: wrap;
+    }
+
+    /* Block Service */
+
+    .block-service {
+        margin-top: 170px;
+    }
+
+    .service-clients {
+        margin-top: 41px;
+        position: relative;
+    }
+
+    .service-img {
+        padding: 15px;
+        border-radius: 8px;
+        background: #FFFAEA;
+        position: relative;
+    }
+
+    .service-clients .about-heading {
+        display: inline-block;
+        position: absolute;
+        left: 80px;
+    }
+
+    .service-clients .card-text {
+        padding-left: 80px;
+    }
+
+    .service-img-successfull {
+        padding: 15px;
+        border-radius: 8px;
+        background: #EEF6FF;
+    }
+
+    .service-video {
+        margin-top: 176px;
+        height: 767px;
+        background-color: var(--orange-color);
+    }
+
+    .service-video .about-heading {
+        width: 51%;
+        color: #fff;
+    }
+
+    .service-video .main-text {
+        padding-top: 13px;
+        color: #fff;
+    }
+
+    /* Block Team */
+
+    .block-team {
+        margin-top: 140px;
+    }
+
+    .block-center {
+        text-align: center;
+    }
+
+    .carousel {
+        width: 329px;
+        height: 448px;
+        box-shadow: 0px 24px 48px rgba(0, 17, 86, 0.0799083);
+        border-radius: 8px;
+    }
+
+    .carousel-img {
+        padding-left: 16px;
+    }
+
+    .slider-team .sub-heading,
+    .slider-team .card-text {
+        padding-left: 32px;
+    }
+
+    .slick-dots li button:before {
+        font-size: 30px;
+        color: #FFE4E1;
+    }
+
+    .slick-dots li.slick-active button:before {
+        font-size: 50px;
+        color: var(--orange-color);
+    }
+
+    .block-testimonials {
+        margin-top: 160px;
+    }
+
+    .reviews {
+        padding: 27px 46px 25px 32px;
+        width: 329px;
+        height: 288px;
+        box-shadow: 0px 24px 48px rgba(0, 17, 86, 0.0799083);
+        border-radius: 8px;
+        background-image: url('../icons/kovichki-icon.svg');
+        background-repeat: no-repeat;
+        background-position: top right;
+    }
+
+    .slick-prev:before {
+        content: "";
+        display: block;
+        background-image: url('../icons/arrow-left-icon.svg');
+        background-repeat: no-repeat;
+        background-size: 12px 20px;
+        background-position: center;
+        width: 48px; 
+        height: 48px;
+        border-radius: 50%;
+        background-color: var(--orange-color);
+        position: absolute;
+        top: 170px;
+        left: 150px;
+        }
+        
+        .slick-next:before {
+        content: "";
+        display: block;
+        background-image: url('../icons/arrow-right.svg');
+        background-repeat: no-repeat;
+        background-size: 12px 20px;
+        background-position: center;
+        width: 48px; 
+        height: 48px;
+        border-radius: 50%;
+        background-color: var(--orange-color);
+        position: absolute;
+        right: 125px;
+        top: 170px;
+        }
+
+        .kickstart {
+            margin-top: 144px;
+            padding: 60px 56px 0 56px;
+            width: 329px;
+            height: 768px;
+            border-radius: 8px;
+            background-color: var(--orange-color);
+            position: relative;
+        }
+        .kickstart .about-heading {
+            color: #fff;
+        }
+
+        .kickstart .main-btn {
+            background-color: #FBD34B;
+            color: var(--black-color);
+        }
+
+        .kickstart .card-text {
+            padding-top: 59px;
+            color: #fff;
+        }
+
+        .kickstart-img {
+            position: absolute;
+            bottom: -15px;
+        }
+
+        .newsletter {
+            margin-top: 109px;
+        }
+
+        .newsletter-input {
+            margin-top: 36px;
+            padding-left: 16px;
+            width: 286px;
+            height: 48px;
+            border-radius: 8px;
+            border: 1px solid var(--gray-color);
+            font-size: 16px;
+            color: rgba(51, 51, 51, 0.496405);
+        }
+
+        .newsletter .main-btn {
+            border: none;
+            font-size: 16px;
+        }
+
+        .latest-articles {
+            margin-top: 187px;
+        }
+
+
+        .main-article {
+            margin-top: 45px;
+        }
+
+        .article {
+            margin-top: 16px;
+            padding: 16px;
+            width: 329px;
+            border-radius: 8px;
+            border: 1px solid #E6EDF5;
+        }
+        .article .about-heading {
+            padding: 25px 16px 13px 16px;
+        }
+        .article .main-text {
+            padding: 13px 16px 47px 16px;
+        }
+        .gray-rectangle {
+            width: 296px;
+            height: 180px;
+            background-color: var(--gray-color);
+            border-radius: 0 0 30px 0;
+        }
+
+        .latest-articles .articles-btn {
+            margin-top: 64px;
+            margin-left: 73px;
+            width: 170px;
+            height: 48px;
+            display: inline-block;
+        }
+
 }
