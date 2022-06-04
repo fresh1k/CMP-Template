@@ -1252,7 +1252,15 @@ ul {
         }
 
         .newsletter {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
             margin-top: 109px;
+        }
+
+        .newsletter-heading {
+            display: inline;
+            font-size: 40px;
         }
 
         .newsletter-input {
