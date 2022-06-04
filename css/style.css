@@ -1218,15 +1218,16 @@ ul {
         }
 
         .kickstart {
-            margin-top: 144px;
+            margin-top: 240px;
             padding: 60px 56px 0 56px;
-            width: 329px;
-            height: 768px;
+            width: 1170px;
+            height: 448px;
             border-radius: 8px;
             background-color: var(--orange-color);
             position: relative;
         }
-        .kickstart .about-heading {
+        .kickstart-heading {
+            font-size: 56px;
             color: #fff;
         }
 
@@ -1236,13 +1237,18 @@ ul {
         }
 
         .kickstart .card-text {
-            padding-top: 59px;
+            padding-top: 0;
             color: #fff;
+            position: absolute;
+            top: 91px;
+            right: 100px;
         }
 
         .kickstart-img {
             position: absolute;
-            bottom: -15px;
+            top: 95%;
+            left: 50%;
+            transform: translate(-50%, -50%);
         }
 
         .newsletter {
