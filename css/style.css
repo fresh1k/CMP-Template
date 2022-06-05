@@ -1121,6 +1121,7 @@ ul {
     }
 
     .features-rectangle-big {
+        background-color: var(--gray-color);
         transform: rotateX(1deg);
         position: absolute;
         top: 0;
@@ -1132,26 +1133,70 @@ ul {
         width: 173px;
         height: 439px;
         position: absolute;
-        left: 84%;
-        top: 13%;
+        right: 1%;
+        top: 15%;
     }
 
     .features-rectangle-sm {
-        transform: rotate(90deg);
+        width: 216px;
+        height: 128px;
+        transform: rotateX(1deg);
         position: absolute;
-        left: 84%;
-        top: -13%;
+        right: 0;
+        top: -5%;
     }
 
     .features-green-marker {
         position: absolute;
-        right: 0;
+        right: 37%;
+        top: 24%;
+        z-index: 3;
+    }
+
+    .features-paper-icon {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
     }
 
     .features-rectangle-sm-w {
         position: absolute;
-        right: 13%;
-        top: none;  
+        right: 14%;
+        bottom: -37%;
+        z-index: 3;
+    }
+
+    .line-x {
+        width: 8px;
+        height: 82px;
+        background-color: var(--yellow-color);
+        border-radius: 4px;
+        position: absolute;
+        left: 23px;
+        bottom: 19px;
+    }
+
+    .line-y {
+        width: 164px;
+        height: 8px;
+        background-color: var(--yellow-color);
+        border-radius: 4px;
+        position: absolute;
+        left: 23px;
+        bottom: 19px;
+    }
+
+    .features-wave {
+        position: absolute;
+        left: 43px;
+        bottom: 35px;
+    }
+
+    .features-ball {
+        position: absolute;
+        top: 22px;
+        right: 19px;
     }
     
     /* Portfolio */
