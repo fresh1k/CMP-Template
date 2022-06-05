@@ -1120,7 +1120,7 @@ ul {
         line-height: 24px;
     }
 
-    .block-features .rectangle-big {
+    .features-rectangle-big {
         transform: rotateX(1deg);
         position: absolute;
         top: 0;
@@ -1128,7 +1128,7 @@ ul {
         z-index: 2;
     }
 
-    .block-features .rectange-md {
+    .features-rectangle-md {
         width: 173px;
         height: 439px;
         position: absolute;
@@ -1136,19 +1136,19 @@ ul {
         top: 13%;
     }
 
-    .block-features .rectangle-sm {
+    .features-rectangle-sm {
         transform: rotate(90deg);
         position: absolute;
         left: 84%;
         top: -13%;
     }
 
-    .block-features .green-marker {
+    .features-green-marker {
         position: absolute;
         right: 0;
     }
 
-    .block-features .rectangle-sm-w {
+    .features-rectangle-sm-w {
         position: absolute;
         right: 13%;
         top: none;  
