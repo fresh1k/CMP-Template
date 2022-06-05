@@ -1325,10 +1325,29 @@ ul {
         background: #EEF6FF;
     }
 
-    .service-rectangle {
+    .service-rectangle-big {
+        margin-right: 70px;
+        background-color: var(--gray-color);
         position: absolute;
         right: 0;
         top: 0;
+        z-index: 2;
+    }
+
+    .service-rectangle-md {
+        width: 255px;
+        height: 319px;
+        position: absolute;
+        right: 5%;
+        top: 16%;
+        z-index: 1;
+    }
+
+    .service-rectangle-sm {
+        transform: rotateX(1deg);
+        position: absolute;
+        right: 0;
+        top: 16%;
     }
 
     .service-video {
