@@ -990,6 +990,7 @@ ul {
     }
 
     .about-rectangle-big {
+        display: inline-block;
         margin-left: 30px;
         position: relative;
         transform: rotate(90deg);
@@ -1515,6 +1516,43 @@ ul {
     .block-testimonials {
         margin-top: 160px;
         position: relative;
+    }
+
+    .testimonials-rectangle-big {
+        display: inline-block;
+        margin-left: 30px;
+        transform: rotate(90deg);
+        position: relative;
+        background-color: var(--gray-color);
+        z-index: 3;
+    }
+
+    .testimonials-rectangle-md {
+        position: absolute;
+        left: 1%;
+        top: 34%;
+        z-index: 1;
+    }
+
+    .testimonials-rectangle-sm {
+        position: absolute;
+        left: 0;
+        bottom: -4%;
+        z-index: 2;
+    }
+
+    .testimonials-green-marker {
+        position: absolute;
+        top: 20%;
+        left: 0;
+        z-index: 3;
+    }
+
+    .questionary-icon {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
     }
 
     .testimonails-heading {
