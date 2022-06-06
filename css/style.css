@@ -791,6 +791,7 @@ ul {
       }
 
       .rectangle-sm-w {
+          display: inline-block;
         width: 216px;
         height: 128px;
         border-radius: 8px;
@@ -837,9 +838,6 @@ ul {
           height: 16px;
           background-color: var(--yellow-color);
           border-radius: 4px;
-          position: absolute;
-          bottom: 22px;
-          left: 28px;
       }
 
       .rectangle-g-sm {
@@ -847,9 +845,6 @@ ul {
           height: 22px;
           border-radius: 4px;
           background-color: var(--green-color);
-          position: absolute;
-          bottom: 22px;
-          left: 57px;
       }
 
       .rectangle-r-md {
@@ -857,9 +852,6 @@ ul {
         height: 30px;
         border-radius: 4px;
         background-color: var(--orange-color);
-        position: absolute;
-        bottom: 22px;
-        left: 86px;
     }
 
     .rectangle-y-md {
@@ -867,9 +859,6 @@ ul {
         height: 39px;
         border-radius: 4px;
         background-color: var(--yellow-color);
-        position: absolute;
-        bottom: 22px;
-        left: 114px;
     }
 
     .rectangle-g-lg {
@@ -877,9 +866,7 @@ ul {
         height: 52px;
         border-radius: 4px;
         background-color: var(--green-color);
-        position: absolute;
-        bottom: 22px;
-        right: 57px;
+
     }
 
     .rectangle-r-lg {
@@ -887,11 +874,43 @@ ul {
         height: 74px;
         border-radius: 4px;
         background-color: var(--orange-color);
+    }
+
+    .company-rectangle-y-sm {
+        position: absolute;
+        bottom: 22px;
+        left: 28px;
+    }
+
+    .company-rectangle-g-sm {
+        position: absolute;
+        bottom: 22px;
+        left: 57px;
+    }
+
+    .company-rectangle-r-md {
+        position: absolute;
+        bottom: 22px;
+        left: 86px;
+    }
+
+    .company-rectangle-y-md {
+        position: absolute;
+        bottom: 22px;
+        left: 114px;
+    }
+
+    .company-rectangle-g-lg {
+        position: absolute;
+        bottom: 22px;
+        right: 57px;
+    }
+
+    .company-rectangle-r-lg {
         position: absolute;
         bottom: 22px;
         right: 28px;
     }
-
 
     .main-circle {
         display: inline-flex;
@@ -1331,7 +1350,7 @@ ul {
         position: absolute;
         right: 0;
         top: 0;
-        z-index: 2;
+        z-index: 3;
     }
 
     .service-rectangle-md {
@@ -1339,19 +1358,79 @@ ul {
         height: 319px;
         position: absolute;
         right: 5%;
-        top: 16%;
+        top: 20%;
         z-index: 1;
     }
 
     .service-rectangle-sm {
-        transform: rotateX(1deg);
+        transform: rotate(90deg);   
+        position: absolute;
+        right: 21%;
+        top: 39%;
+        z-index: 2; 
+    }
+
+    .service-green-marker {
+        position: absolute;
+        top: 7%;
+        right: 39%;
+        z-index: 3;
+    }
+
+    .service-rocket-icon {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .service-rectangle-sm-w {
+        width: 148px;
+        height: 176px;
         position: absolute;
         right: 0;
-        top: 16%;
+        top: 13%;
+        z-index: 3;
+    }
+
+    .service-rectangle-r-md {
+        width: 16px;
+        height: 55px;
+        position: absolute;
+        top: 51px;
+        left: 23px;
+    }
+
+    .service-rectangle-y-lg {
+        width: 16px;
+        height: 69px;
+        background-color: var(--yellow-color);
+        border-radius: 4px;
+        position: absolute;
+        top: 37px;
+        left: 51px;
+    }
+
+    .service-rectangle-g-md {
+        position: absolute;
+        top: 51px;
+        right: 52px;
+    }
+
+    .service-rectangle-r-lg {
+        position: absolute;
+        top: 27px;
+        right: 23px; 
+    }
+
+    .service-wave {
+        position: absolute;
+        left: 16px;
+        bottom: 24px;
     }
 
     .service-video {
-        margin-top: 176px;
+        margin-top: 350px;
         height: 384px;
         background-color: var(--orange-color);
         position: relative;
