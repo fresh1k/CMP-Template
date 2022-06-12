@@ -688,7 +688,6 @@ ul {
 @media screen and (min-width: 1440px) {
     #container {
         max-width: 1170px;
-        /* max-width: 100%; */
         margin: 0 auto;
         overflow: hidden;
     }
@@ -747,13 +746,23 @@ ul {
     
     .main-inner {
         padding-top: 0;
-        position: relative;
     }
 
 
     .block-company {
+        /* padding: 0 135px; */
         margin-top: 187px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-flow: row-reverse;
     }
+
+    .block-company .block-rectangles {
+        margin-right: 38px;
+        position: relative;
+    }
+
     .rectangle-big {
         width: 462px;
         height: 480px;
@@ -791,7 +800,6 @@ ul {
       }
 
       .rectangle-sm-w {
-          display: inline-block;
         width: 216px;
         height: 128px;
         border-radius: 8px;
@@ -800,31 +808,29 @@ ul {
       }
 
       .company-rectangle-big {
-        position: absolute;
-        right: 50px;
-        top: -70px;
-        z-index: 2;
+          position: relative;
+          z-index: 2;
       }
 
       .company-rectangle-sm {
         position: absolute;
-        right: 10px;
-        top: 80px;
+        top: 32%;
+        right: -6%;
         z-index: 1;
       }
 
       .company-green-marker {
         position: absolute;
-        top: 20px;
-        right: 40%;
-        z-index: 3;
+        top: 20%;
+        left: -8%;
+        z-index: 2;
       }
 
       .company-rectangle-sm-w {
         position: absolute;
-        left: 50%;
-        top: 4%;
-        z-index: 4;
+        left: -10%;
+        bottom: -11%;
+        z-index: 2;
       }
 
       .header-arrow-up {
@@ -939,7 +945,6 @@ ul {
     }
     
     .main-heading {
-        width: 100%;
         font-size: 72px;
         line-height: 80px;
     }
@@ -986,13 +991,17 @@ ul {
     
     .block-about {
         margin-top: 140px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .block-about .block-rectangles {
         position: relative;
-        z-index: 1;
     }
 
     .about-rectangle-big {
-        display: inline-block;
-        margin-left: 30px;
+        margin-left: 50px;
         position: relative;
         transform: rotate(90deg);
         background-color: var(--gray-color);
@@ -1001,15 +1010,15 @@ ul {
 
     .about-rectangle-md {
         position: absolute;
-        left: 1%;
-        top: 4.5%;
+        left: 4%;
+        bottom: -2%;
         z-index: 1;
     }
 
     .about-rectangle-sm {
         position: absolute;
         left: 0;
-        top: 9%;
+        bottom: -5%;
         z-index: 2;
     }
 
@@ -1017,9 +1026,9 @@ ul {
         width: 128px;
         height: 128px;
         position: absolute;
-        top: 11%;
-        left: 35%;
-        z-index: 4;
+        bottom: -7%;
+        right: -11%;
+        z-index: 3;
     }
 
     .about-oval-img {
@@ -1039,7 +1048,7 @@ ul {
     .about-green-marker {
         position: absolute;
         left: 0;
-        top: 3%;
+        top: 15%;
         z-index: 3;
     }
 
@@ -1048,12 +1057,6 @@ ul {
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);
-    }
-
-    .about-absolute {
-        position: absolute;
-        right: 0;
-        top: 0;
     }
     
     .about-heading {
@@ -1121,6 +1124,13 @@ ul {
 
     .block-features {
         margin-top: 304px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-flow: row-reverse;
+    }
+
+    .block-features .block-rectangles {
         position: relative;
     }
 
@@ -1154,11 +1164,10 @@ ul {
     }
 
     .features-rectangle-big {
+        margin-right: 30px;
         background-color: var(--gray-color);
         transform: rotateX(1deg);
-        position: absolute;
-        top: 0;
-        right: 30px;
+        position: relative;
         z-index: 2;
     }
 
@@ -1166,8 +1175,8 @@ ul {
         width: 173px;
         height: 439px;
         position: absolute;
-        right: 1%;
-        top: 15%;
+        right: 3%;
+        bottom: -3%;
     }
 
     .features-rectangle-sm {
@@ -1181,8 +1190,8 @@ ul {
 
     .features-green-marker {
         position: absolute;
-        right: 37%;
-        top: 24%;
+        left: -10%;
+        top: 15%;
         z-index: 3;
     }
 
@@ -1195,8 +1204,8 @@ ul {
 
     .features-rectangle-sm-w {
         position: absolute;
-        right: 14%;
-        bottom: -20%;
+        right: 25%;
+        bottom: -11%;
         z-index: 3;
     }
 
@@ -1235,6 +1244,7 @@ ul {
     /* Portfolio */
 
     .block-portfolio {
+        /* padding: 0 135px; */
         margin-top: 220px;
     }
 
@@ -1317,12 +1327,18 @@ ul {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        gap: 57px;
     }
     /* Block Service */
 
     .block-service {
-        margin-top: 170px;
+        margin-top: 256px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-flow: row-reverse;
+    }
+
+    .block-service .block-rectangles {
         position: relative;
     }
 
@@ -1363,9 +1379,7 @@ ul {
     .service-rectangle-big {
         margin-right: 70px;
         background-color: var(--gray-color);
-        position: absolute;
-        right: 0;
-        top: 0;
+        position: relative;
         z-index: 3;
     }
 
@@ -1373,23 +1387,23 @@ ul {
         width: 255px;
         height: 319px;
         position: absolute;
-        right: 5%;
-        top: 16%;
+        right: 9%;
+        bottom: -4%;
         z-index: 1;
     }
 
     .service-rectangle-sm {
         transform: rotate(90deg);   
         position: absolute;
-        right: 21%;
-        top: 32%;
+        left: 24%;
+        bottom: -13%;
         z-index: 2; 
     }
 
     .service-green-marker {
         position: absolute;
-        top: 7%;
-        right: 39%;
+        top: 15%;
+        left: -10%;
         z-index: 3;
     }
 
@@ -1405,7 +1419,7 @@ ul {
         height: 176px;
         position: absolute;
         right: 0;
-        top: 13%;
+        top: 23%;
         z-index: 3;
     }
 
@@ -1476,6 +1490,7 @@ ul {
     /* Block Team */
 
     .block-team {
+        /* padding: 0 135px; */
         margin-top: 140px;
     }
 
@@ -1529,13 +1544,19 @@ ul {
     }
 
     .block-testimonials {
+        /* padding: 0 135px;  */
         margin-top: 160px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .block-testimonials .block-rectangles {
         position: relative;
     }
 
     .testimonials-rectangle-big {
-        display: inline-block;
-        margin-left: 30px;
+        margin-left: 50px;
         transform: rotate(90deg);
         position: relative;
         background-color: var(--gray-color);
@@ -1544,8 +1565,8 @@ ul {
 
     .testimonials-rectangle-md {
         position: absolute;
-        left: 1%;
-        top: 34%;
+        left: 2%;
+        bottom: -1%;
         z-index: 1;
     }
 
@@ -1558,7 +1579,7 @@ ul {
 
     .testimonials-green-marker {
         position: absolute;
-        top: 20%;
+        top: 15%;
         left: 0;
         z-index: 3;
     }
@@ -1664,6 +1685,7 @@ ul {
         }
 
         .newsletter {
+            /* padding: 0 135px; */
             margin-top: 109px;
             display: flex;
             justify-content: space-between;
@@ -1698,6 +1720,7 @@ ul {
         }
 
         .latest-articles {
+            /* padding: 0 135px; */
             margin-top: 187px;
         }
 
