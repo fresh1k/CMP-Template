@@ -161,6 +161,10 @@ ul {
         padding-top: 43px;
     }
 
+    .text-wrap {
+        display: block;
+    }
+
     .block-rectangles {
         position: relative;
     }
@@ -207,7 +211,6 @@ ul {
         height: 77px;
         border-radius: 8px;
         background-color: #fff;
-        border: 1px solid #000;
       }
 
     .company-rectangle-big {
@@ -231,16 +234,16 @@ ul {
 
     .company-rectangle-sm-w {
       position: absolute;
-      left: -7%;
+      left: -4%;
       bottom: -11%;
       z-index: 2;
     }
 
     .header-arrow-up {
-        width: 50%;
+        width: 60%;
         position: absolute;
         left: 10%;
-        top: 5%;
+        top: 17%;
     }
 
     .rectangle-y-sm {
@@ -346,18 +349,20 @@ ul {
     }
     
     .heading {
+        font-size: 40px;
         font-family: 'Hind Siliguri';
         letter-spacing: -1px;
         color: var(--black-color);
     }
     
-    .main-heading {
+    .company-heading {
+        margin-top: 20px;
         width: 327px;
         font-size: 56px;
         line-height: 64px;
     }
     
-    .main-heading > span {
+    .company-heading > span {
         display: block;
         color: var(--green-color);
     }
@@ -370,13 +375,18 @@ ul {
     }
     
     .main-text {
-        padding: 32px 0;
-        width: 329px;
         font-size: 20px;
         font-family: 'Work Sans';
         line-height: 32px;
         color: var(--black-color);
-        overflow: hidden;
+    }
+
+    .company-text {
+        margin-top: 40px;
+    }
+
+    .company-btn {
+        margin-top: 32px;
     }
     
     .main-btn {
@@ -473,20 +483,18 @@ ul {
     }
     
     .about-heading {
+        margin-top: 17px;
         font-size: 40px;
         line-height: 48px;
     }
 
     .about-sub-heading {
+        margin-top: 13px;
         font-size: 24px;
     }
 
-    .about-btn {
-        margin-top: 37px;
-    }
-    
     .about-items {
-        padding-top: 18px;
+        margin-top: 18px;
         display: flex;
         flex-direction: column;
         gap: 8px;
@@ -496,6 +504,10 @@ ul {
         display: flex;
         align-items: center;
         gap: 8px;
+    }
+
+    .about-btn {
+        margin-top: 37px;
     }
 
     .cards {
@@ -532,8 +544,21 @@ ul {
 
     /* Features */
 
+    .block-features {
+        margin-top: 155px;
+    }
+
+    .features-heading {
+        margin-top: 17px;
+    }
+
     .features-text {
+        margin-top: 15px;
         line-height: 32px;
+    }
+
+    .features-text .text-wrap {
+        display: inline;
     }
 
     .card-features {
@@ -543,7 +568,6 @@ ul {
         height: 160px;
         box-shadow: 0px 24px 48px rgba(0, 17, 86, 0.0799083);
         border-radius: 8px;
-        border: 1px solid #000;
     }
 
     .card-features .card-heading {
@@ -647,7 +671,8 @@ ul {
         margin-top: 156px;
     }
 
-    .block-portfolio .card-text {
+    .portfolio-text {
+        margin-top: 15px;
         text-align: center;
     }
 
@@ -686,7 +711,8 @@ ul {
         color: #fff;
     }
 
-    .portfolio-card .card-heading {
+    .portfolio-card .card-heading,
+    .portfolio-card .card-text {
         text-align: center;
     }
 
@@ -726,7 +752,9 @@ ul {
         margin-top: 170px;
     }
 
-    .service-clients {
+    .service-client {
+        display: flex;
+        align-items: center;
         margin-top: 41px;
         position: relative;
     }
@@ -738,14 +766,14 @@ ul {
         position: relative;
     }
 
-    .service-clients .about-heading {
-        display: inline-block;
-        position: absolute;
-        left: 80px;
+    .service-client-heading {
+        margin-left: 24px;
     }
 
-    .service-clients .card-text {
-        padding-left: 80px;
+    .service-client-text {
+        position: absolute;
+        bottom: -40%;
+        left: 26%;
     }
 
     .service-img-successfull {
@@ -847,19 +875,21 @@ ul {
     }
 
     .service-video {
+        padding: 0 23px;
         margin-top: 176px;
-        height: 767px;
+        height: 768px;
+        width: 375px;
         background-color: var(--orange-color);
     }
 
-    .service-video .about-heading {
-        width: 51%;
+    .service-video-heading {
         color: #fff;
     }
 
     .service-video .main-text {
         padding-top: 13px;
         color: #fff;
+        line-height: 32px;
     }
 
     /* Block Team */
@@ -906,6 +936,55 @@ ul {
         margin-top: 160px;
     }
 
+    .block-testimonails .block-rectangles {
+        position: relative;
+    }
+
+    .testimonials-rectangle-big {
+        margin-left: 11px;
+        transform: rotate(90deg);
+        position: relative;
+        background-color: var(--gray-color);
+        z-index: 3;
+    }
+
+    .testimonials-rectangle-md {
+        width: 271px;
+        height: 173px;
+        position: absolute;
+        left: -1%;
+        bottom: -2%;
+        z-index: 1;
+    }
+
+    .testimonials-rectangle-sm {
+        width: 69px;
+        height: 85px;
+        position: absolute;
+        left: -4%;
+        bottom: -5%;
+        z-index: 2;
+    }
+
+    .testimonials-green-marker {
+        position: absolute;
+        left: -5%;
+        top: 25%;
+        z-index: 3;
+    }
+
+    .questionary-icon {
+        width: 50%;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .block-testimonails-main {
+        margin-top: 40px;
+    }
+
     .reviews {
         padding: 27px 46px 25px 32px;
         width: 329px;
@@ -930,7 +1009,7 @@ ul {
         background-color: var(--orange-color);
         position: absolute;
         top: 170px;
-        left: 150px;
+        left: 120px;
         }
         
         .slick-next:before {
@@ -945,7 +1024,7 @@ ul {
         border-radius: 50%;
         background-color: var(--orange-color);
         position: absolute;
-        right: 125px;
+        right: 155px;
         top: 170px;
         }
 
@@ -958,11 +1037,12 @@ ul {
             background-color: var(--orange-color);
             position: relative;
         }
-        .kickstart .about-heading {
+        .kickstart-heading {
             color: #fff;
         }
 
         .kickstart .main-btn {
+            margin-top: 20px;
             background-color: #FBD34B;
             color: var(--black-color);
         }
@@ -973,6 +1053,7 @@ ul {
         }
 
         .kickstart-img {
+            width: 70%;
             position: absolute;
             bottom: -15px;
         }
@@ -993,6 +1074,7 @@ ul {
         }
 
         .newsletter .main-btn {
+            margin-top: 20px;
             border: none;
             font-size: 16px;
         }
@@ -1004,6 +1086,16 @@ ul {
 
         .main-article {
             margin-top: 45px;
+            border: 1px solid #E6EDF5;
+            padding: 16px 17px 47px 16px;
+        }
+
+        .main-article-heading {
+            margin: 25px 0 13px 0;
+        }
+
+        .main-article-img {
+            width: 100%;
         }
 
         .article {
@@ -1013,17 +1105,18 @@ ul {
             border-radius: 8px;
             border: 1px solid #E6EDF5;
         }
-        .article .about-heading {
-            padding: 25px 16px 13px 16px;
+        .article-sub-heading{
+            font-weight: bold;
+            color: #333333;
+            font-family: 'Hind Siliguri';
+            margin: 25px 0 39px 0;
         }
-        .article .main-text {
+        .article .card-text {
             padding: 13px 16px 47px 16px;
         }
-        .gray-rectangle {
-            width: 296px;
-            height: 180px;
-            background-color: var(--gray-color);
-            border-radius: 0 0 30px 0;
+
+        .article-img {
+            width: 100%;
         }
 
         .latest-articles .articles-btn {
