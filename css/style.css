@@ -559,10 +559,6 @@ ul {
         line-height: 32px;
     }
 
-    .features-text .text-wrap {
-        display: inline;
-    }
-
     .card-features {
         padding: 25px 35px 0 32px;
         margin: 13px 0 79px 0;
@@ -901,9 +897,6 @@ ul {
         line-height: 32px;
     }
 
-    .service-video-text .text-wrap {
-        display: inline;
-    }
 
     /* Block Team */
 
@@ -920,15 +913,15 @@ ul {
         margin: 17px 0;
     }
 
-    .team-text .text-wrap {
-        display: inline;
-    }
-
     .carousel-mob {
         width: 329px;
         height: 448px;
         box-shadow: 0px 24px 48px rgba(0, 17, 86, 0.0799083);
         border-radius: 8px;
+    }
+
+    .carousel-desk {
+        display: none;
     }
 
     .carousel-img {
@@ -949,10 +942,6 @@ ul {
     .slick-dots li.slick-active button:before {
         font-size: 50px;
         color: var(--orange-color);
-    }
-
-    .carousel-desk {
-        display: none;
     }
 
     .block-testimonials {
@@ -1081,7 +1070,6 @@ ul {
         }
 
         .kickstart-img {
-            width: 70%;
             position: absolute;
             bottom: -15px;
         }
@@ -1102,7 +1090,7 @@ ul {
             color: rgba(51, 51, 51, 0.496405);
         }
 
-        .newsletter .main-btn {
+        .newsletter-btn {
             margin-top: 20px;
             border: none;
             font-size: 16px;
@@ -1113,16 +1101,13 @@ ul {
             margin-top: 187px;
         }
 
+
         .article-heading {
             margin-top: 17px;
         }
 
         .article-text {
             margin-top: 15px;
-        }
-
-        .article-text .text-wrap {
-            display: inline;
         }
 
         .main-article {
@@ -1132,15 +1117,12 @@ ul {
         }
 
         .main-article-img {
-            width: 100%;
+            width: auto;
+            height: 180px;
         }
 
         .main-article-heading {
             margin: 25px 0 13px 0;
-        }
-
-        .main-article-heading .text-wrap {
-            display: inline;
         }
 
         .article {
@@ -1150,6 +1132,12 @@ ul {
             border-radius: 8px;
             border: 1px solid #E6EDF5;
         }
+
+        .article-img {
+            width: auto;
+            height: 210px;
+        }
+
         .article-sub-heading{
             font-weight: bold;
             color: #333333;
@@ -1158,10 +1146,6 @@ ul {
         }
         .article .card-text {
             padding: 13px 16px 47px 16px;
-        }
-
-        .article-img {
-            width: 100%;
         }
 
         .latest-articles .articles-btn {
@@ -1258,7 +1242,7 @@ ul {
 
 
 
-@media screen and (max-width: 1440px) {
+@media only screen and (min-width: 1440px) {
     #container {
         margin: 0 auto;
         overflow: hidden;
@@ -1304,8 +1288,8 @@ ul {
         color: var(--black-color);    
     }
 
-    .header-btn {
-        margin-top: 16px;
+    .header-inner .header-btn { 
+        display: block;
     }
 
 /* Main */
@@ -1374,7 +1358,6 @@ ul {
         height: 128px;
         border-radius: 8px;
         background-color: #fff;
-        border: 1px solid #000;
     }
 
     .company-rectangle-big {
@@ -1640,10 +1623,6 @@ ul {
     .about-sub-heading {
         margin-top: 26px;
         font-size: 24px;
-    }
-
-    .about-sub-heading .text-wrap {
-        display: inline;
     }
 
     .about-items {
@@ -1936,14 +1915,13 @@ ul {
     }
 
     .service-client-heading {
-        padding-left: 24px;
         font-size: 40px;
     }
 
     .service-client-text {
         position: absolute;
         bottom: -20px;
-        right: 7px;
+        left: 55%;
     }
 
     .service-img-successfull {
@@ -2076,6 +2054,10 @@ ul {
     }
 
     .team-heading {
+        margin: 20px 0 28px 0;
+    }
+
+    .team-heading {
         font-size: 56px;
     }
 
@@ -2105,6 +2087,7 @@ ul {
     }
 
     .slick-dots li button:before {
+        margin-top: 64px;
         font-size: 30px;
         color: #FFE4E1;
     }
@@ -2116,7 +2099,7 @@ ul {
 
     .block-testimonials {
         padding: 0 135px; 
-        margin-top: 160px;
+        margin-top: 307px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -2163,6 +2146,7 @@ ul {
     }
 
     .testimonails-heading {
+        margin: 20px 0 17px 0;
         font-size: 56px;
     }
 
@@ -2177,37 +2161,37 @@ ul {
         background-position: top right;
     }
 
-.slick-prev:before {
-    content: "";
-    display: block;
-    background-image: url('../icons/arrow-left-icon.svg');
-    background-repeat: no-repeat;
-    background-size: 12px 20px;
-    background-position: center;
-    width: 48px; 
-    height: 48px;
-    border-radius: 50%;
-    background-color: var(--orange-color);
-    position: absolute;
-    top: 170px;
-    left: 30px;
-    }
-    
-    .slick-next:before {
-    content: "";
-    display: block;
-    background-image: url('../icons/arrow-right.svg');
-    background-repeat: no-repeat;
-    background-size: 12px 20px;
-    background-position: center;
-    width: 48px; 
-    height: 48px;
-    border-radius: 50%;
-    background-color: var(--orange-color);
-    position: absolute;
-    right: 385px;
-    top: 170px;
-    }
+    .slick-prev:before {
+        content: "";
+        display: block;
+        background-image: url('../icons/arrow-left-icon.svg');
+        background-repeat: no-repeat;
+        background-size: 12px 20px;
+        background-position: center;
+        width: 48px; 
+        height: 48px;
+        border-radius: 50%;
+        background-color: var(--orange-color);
+        position: absolute;
+        top: 170px;
+        left: 30px;
+        }
+        
+        .slick-next:before {
+        content: "";
+        display: block;
+        background-image: url('../icons/arrow-right.svg');
+        background-repeat: no-repeat;
+        background-size: 12px 20px;
+        background-position: center;
+        width: 48px; 
+        height: 48px;
+        border-radius: 50%;
+        background-color: var(--orange-color);
+        position: absolute;
+        right: 385px;
+        top: 170px;
+        }
 
     .kickstart {
         margin: 240px auto;
@@ -2256,10 +2240,6 @@ ul {
         font-size: 40px;
     }
 
-    .newsletter-heading .text-wrap {
-        display: inline;
-    }
-
     .newsletter-form {
         display: flex;
         justify-content: center;
@@ -2278,9 +2258,9 @@ ul {
         color: rgba(51, 51, 51, 0.496405);
     }
 
-    .newsletter .main-btn {
+    .newsletter-btn {
+        margin-top: 0;
         border: none;
-        font-size: 16px;
     }
 
     .latest-articles {
@@ -2292,7 +2272,6 @@ ul {
         font-size: 56px;
     }
 
-
     .main-article {
         height: 368px;
         margin-top: 45px;
@@ -2302,6 +2281,7 @@ ul {
 
     .main-article-img {
         padding: 16px 0 16px 16px;
+        height: 336px;
     }
 
     .main-article-heading {
@@ -2318,10 +2298,6 @@ ul {
         position: absolute;
         right: 30px;
         top: 170px;
-    }
-
-    .main-article-text .text-wrap {
-        display: inline;
     }
 
     .articles {
@@ -2343,6 +2319,7 @@ ul {
     }
 
     .article-img {
+        height: 240px;
         padding: 16px 16px 25px 16px;
     }
 
@@ -2354,8 +2331,8 @@ ul {
     .articles-btn {
         display: inline-block;
         position: absolute;
-        bottom: 20%;
-        left: 45%;
+        bottom: 15%;
+        left: 40%;
     }
 
     .footer {
@@ -2455,3 +2432,48 @@ ul {
 }
 
 
+@media screen and (min-width: 1600px) {
+    .header-inner {
+        padding: 0 350px;
+    }
+
+    .block-company {
+        padding: 0 350px;
+    }
+
+    .block-about {
+        padding: 0 350px;
+    }
+
+    .cards {
+        padding: 0 350px;
+    }
+
+    .block-features {
+        padding: 0 350px;
+    }
+
+    .block-portfolio {
+        padding: 0 350px;
+    }
+
+    .block-service {
+        padding: 0 350px;
+    }
+
+    .block-team {
+        padding: 0 350px;
+    }
+
+    .block-testimonials {
+        padding: 0 350px;
+    }
+
+    .newsletter {
+        padding: 0 350px;
+    }
+
+    .latest-articles {
+        padding: 0 350px;
+    }
+}
