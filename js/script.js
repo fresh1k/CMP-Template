@@ -1,7 +1,8 @@
 // Burger
 let burger = document.querySelector("#burger-icon");
 let header = document.querySelector("#header");
-burger.onclick = function() {
+burger.onclick = function (e) {
+    e.preventDefault();
     header.classList.toggle("menu-open");
 }
 
