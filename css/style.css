@@ -152,10 +152,6 @@ ul {
     .menu-open .header-btn {
         display: none;
     }
-
-    .main {
-        padding: 0 23px;
-    }
     
     .main-inner {
         padding-top: 43px;
@@ -163,6 +159,10 @@ ul {
 
     .text-wrap {
         display: block;
+    }
+
+    .block-company {
+        padding: 0 23px;
     }
 
     .block-rectangles {
@@ -405,6 +405,7 @@ ul {
     /* About */
 
     .block-about {
+        padding: 0 23px;
         margin-top: 140px;
     }
 
@@ -546,6 +547,7 @@ ul {
 
     .block-features {
         margin-top: 155px;
+        padding: 0 23px;
     }
 
     .features-heading {
@@ -563,7 +565,7 @@ ul {
 
     .card-features {
         padding: 25px 35px 0 32px;
-        margin-top: 13px;
+        margin: 13px 0 79px 0;
         width: 329px;
         height: 160px;
         box-shadow: 0px 24px 48px rgba(0, 17, 86, 0.0799083);
@@ -578,10 +580,6 @@ ul {
     .card-features .card-text {
         font-size: 14px;
         line-height: 24px;
-    }
-
-    .block-rectangles {
-        margin-top: 78px;
     }
 
     .features-rectangle-big {
@@ -669,6 +667,7 @@ ul {
 
     .block-portfolio {
         margin-top: 156px;
+        padding: 0 23px;
     }
 
     .portfolio-text {
@@ -682,6 +681,7 @@ ul {
     }
 
     .portfolio-card-bg {
+        margin-bottom: 27px;
         width: 329px;
         height: 222px;
         background: var(--gray-color);
@@ -750,6 +750,7 @@ ul {
 
     .block-service {
         margin-top: 170px;
+        padding: 0 23px;
     }
 
     .service-client {
@@ -757,6 +758,14 @@ ul {
         align-items: center;
         margin-top: 41px;
         position: relative;
+    }
+
+    .service-client:last-child {
+        margin-bottom: 69px;
+    }
+
+    .service-heading {
+        margin-top: 17px;
     }
 
     .service-img {
@@ -878,7 +887,7 @@ ul {
         padding: 0 23px;
         margin-top: 176px;
         height: 768px;
-        width: 375px;
+        width: 100%;
         background-color: var(--orange-color);
     }
 
@@ -886,20 +895,33 @@ ul {
         color: #fff;
     }
 
-    .service-video .main-text {
+    .service-video-text {
         padding-top: 13px;
         color: #fff;
         line-height: 32px;
+    }
+
+    .service-video-text .text-wrap {
+        display: inline;
     }
 
     /* Block Team */
 
     .block-team {
         margin-top: 140px;
+        padding: 0 23px;
     }
 
     .block-center {
         text-align: center;
+    }
+
+    .team-heading {
+        margin: 17px 0;
+    }
+
+    .team-text .text-wrap {
+        display: inline;
     }
 
     .carousel-mob {
@@ -919,6 +941,7 @@ ul {
     }
 
     .slick-dots li button:before {
+        margin-top: 64px;
         font-size: 30px;
         color: #FFE4E1;
     }
@@ -933,7 +956,8 @@ ul {
     }
 
     .block-testimonials {
-        margin-top: 160px;
+        padding: 0 23px;
+        margin-top: 200px;
     }
 
     .block-testimonails .block-rectangles {
@@ -985,6 +1009,10 @@ ul {
         margin-top: 40px;
     }
 
+    .testimonails-heading {
+        margin-top: 17px;
+    }
+
     .reviews {
         padding: 27px 46px 25px 32px;
         width: 329px;
@@ -1029,7 +1057,7 @@ ul {
         }
 
         .kickstart {
-            margin-top: 144px;
+            margin: 144px auto;
             padding: 60px 56px 0 56px;
             width: 329px;
             height: 768px;
@@ -1059,6 +1087,7 @@ ul {
         }
 
         .newsletter {
+            padding: 0 23px;
             margin-top: 109px;
         }
 
@@ -1080,9 +1109,21 @@ ul {
         }
 
         .latest-articles {
+            padding: 0 23px;
             margin-top: 187px;
         }
 
+        .article-heading {
+            margin-top: 17px;
+        }
+
+        .article-text {
+            margin-top: 15px;
+        }
+
+        .article-text .text-wrap {
+            display: inline;
+        }
 
         .main-article {
             margin-top: 45px;
@@ -1090,12 +1131,16 @@ ul {
             padding: 16px 17px 47px 16px;
         }
 
+        .main-article-img {
+            width: 100%;
+        }
+
         .main-article-heading {
             margin: 25px 0 13px 0;
         }
 
-        .main-article-img {
-            width: 100%;
+        .main-article-heading .text-wrap {
+            display: inline;
         }
 
         .article {
