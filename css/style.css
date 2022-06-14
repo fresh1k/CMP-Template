@@ -19,10 +19,6 @@ ul {
     list-style: none;
 }
 
-.header {
-    padding-top: 16px;
-}
-
 .header-logo:hover {
     opacity: 0.5;
     transition: all 0.2s ease-in-out;
@@ -52,10 +48,11 @@ ul {
     overflow-x: hidden;
 }
 .header {
-    padding: 16px 23px 0 23px;
+    padding-top: 16px;
 }
 
 .header-inner {
+    padding: 0 23px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -2096,6 +2093,7 @@ margin-top: 54px;
     }
 
     .carousel-desk {
+        display: block;
         margin-top: 61px;
     }
 
