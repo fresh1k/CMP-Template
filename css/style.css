@@ -103,7 +103,7 @@ ul {
 
 .header.menu-open {
     background-color: var(--orange-color);
-    width: 40%;
+    width: 30%;
     position: fixed;
     right: 0;
     top: 0;
@@ -139,6 +139,7 @@ ul {
 .menu-open .burger-icon:before {
     transform: rotate(45deg);
     top: 0;
+    z-index: 5;
 }
 
 .menu-open .burger-icon:after {
@@ -150,7 +151,7 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 40%;
+    width: 30%;
     height: 100vh;
     position: absolute;
     top: 0;
@@ -198,48 +199,48 @@ ul {
     height: 288px;
     background-color: var(--yellow-color);
     border-radius: 100px 8px 8px 8px;
-    }
+}
 
-    .rectangle-md {
+.rectangle-md {
     width: 482px;
     height: 326px;
     background-color: var(--yellow-color);
     border-radius: 12px;
 }
-    
-    .rectangle-sm {
+
+.rectangle-sm {
     width: 77px;
     height: 140px;
     background-color: #F07566;
     border-radius: 8px;
-    }
-    
-    .green-marker {
+}
+
+.green-marker {
     width: 61px;
     height: 62px;
     background-color: #4DB282;
     border-radius: 50% 50% 8px 50%;
 
-    }
+}
 
-    .gramophone-icon {
+.gramophone-icon {
     width: 50%;
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    }
+}
 
-    .rectangle-sm-w {
+.rectangle-sm-w {
     width: 123px;
     height: 77px;
     border-radius: 8px;
     background-color: #fff;
-    }
+}
 
 .company-rectangle-big {
-position: relative;
-z-index: 2;
+    position: relative;
+    z-index: 2;
 }
 
 .company-rectangle-sm {
@@ -381,7 +382,6 @@ margin-top: 54px;
 
 .company-heading {
     margin-top: 20px;
-    width: 327px;
     font-size: 56px;
     line-height: 64px;
 }
@@ -473,7 +473,8 @@ margin-top: 54px;
 }
 
 .about-oval-img {
-    width: 80%;
+    max-width: 44px;
+    max-height: 44px;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -481,7 +482,8 @@ margin-top: 54px;
 }
 
 .about-checkmark-icon {
-    width: 30%;
+    max-width: 15px;
+    max-height: 15px;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -1052,218 +1054,319 @@ margin-top: 54px;
     position: absolute;
     top: 170px;
     left: 120px;
-    }
+}
     
-    .slick-next:before {
-    content: "";
-    display: block;
-    background-image: url('../icons/arrow-right.svg');
-    background-repeat: no-repeat;
-    background-size: 12px 20px;
-    background-position: center;
-    width: 48px; 
-    height: 48px;
-    border-radius: 50%;
+.slick-next:before {
+content: "";
+display: block;
+background-image: url('../icons/arrow-right.svg');
+background-repeat: no-repeat;
+background-size: 12px 20px;
+background-position: center;
+width: 48px; 
+height: 48px;
+border-radius: 50%;
+background-color: var(--orange-color);
+position: absolute;
+right: 155px;
+top: 170px;
+}
+
+.kickstart {
+    margin: 144px auto;
+    padding: 60px 56px 0 56px;
+    width: 329px;
+    height: 768px;
+    border-radius: 8px;
     background-color: var(--orange-color);
+    position: relative;
+}
+.kickstart-heading {
+    color: #fff;
+}
+
+.kickstart .main-btn {
+    margin-top: 20px;
+    background-color: #FBD34B;
+    color: var(--black-color);
+}
+
+.kickstart .card-text {
+    padding-top: 59px;
+    color: #fff;
+}
+
+.kickstart-img {
+    max-width: 215px;
+    max-height: 108px;
     position: absolute;
-    right: 155px;
-    top: 170px;
-    }
+    bottom: -15px;
+}
 
-    .kickstart {
-        margin: 144px auto;
-        padding: 60px 56px 0 56px;
-        width: 329px;
-        height: 768px;
-        border-radius: 8px;
-        background-color: var(--orange-color);
-        position: relative;
-    }
-    .kickstart-heading {
-        color: #fff;
-    }
+.newsletter {
+    padding: 0 23px;
+    margin-top: 109px;
+}
 
-    .kickstart .main-btn {
-        margin-top: 20px;
-        background-color: #FBD34B;
-        color: var(--black-color);
-    }
+.newsletter-input {
+    margin-top: 36px;
+    padding-left: 16px;
+    width: 286px;
+    height: 48px;
+    border-radius: 8px;
+    border: 1px solid var(--gray-color);
+    font-size: 16px;
+    color: rgba(51, 51, 51, 0.496405);
+}
 
-    .kickstart .card-text {
-        padding-top: 59px;
-        color: #fff;
-    }
+.newsletter-btn {
+    margin-top: 20px;
+    border: none;
+    font-size: 16px;
+}
 
-    .kickstart-img {
-        position: absolute;
-        bottom: -15px;
-    }
-
-    .newsletter {
-        padding: 0 23px;
-        margin-top: 109px;
-    }
-
-    .newsletter-input {
-        margin-top: 36px;
-        padding-left: 16px;
-        width: 286px;
-        height: 48px;
-        border-radius: 8px;
-        border: 1px solid var(--gray-color);
-        font-size: 16px;
-        color: rgba(51, 51, 51, 0.496405);
-    }
-
-    .newsletter-btn {
-        margin-top: 20px;
-        border: none;
-        font-size: 16px;
-    }
-
-    .latest-articles {
-        padding: 0 23px;
-        margin-top: 187px;
-    }
+.latest-articles {
+    padding: 0 23px;
+    margin-top: 187px;
+}
 
 
-    .article-heading {
-        margin-top: 17px;
+.article-heading {
+    margin-top: 17px;
+}
+
+.article-text {
+    margin-top: 15px;
+}
+
+.main-article {
+    margin-top: 45px;
+    border: 1px solid #E6EDF5;
+    padding: 16px 17px 47px 16px;
+}
+
+.main-article-img {
+    width: auto;
+    height: 180px;
+}
+
+.main-article-heading {
+    margin: 25px 0 13px 0;
+}
+
+.article {
+    margin-top: 16px;
+    padding: 16px;
+    width: 329px;
+    border-radius: 8px;
+    border: 1px solid #E6EDF5;
+}
+
+.article-img {
+    width: auto;
+    height: 210px;
+}
+
+.article-sub-heading{
+    font-weight: bold;
+    color: #333333;
+    font-family: 'Hind Siliguri';
+    margin: 25px 0 39px 0;
+}
+.article .card-text {
+    padding: 13px 16px 47px 16px;
+}
+
+.latest-articles .articles-btn {
+    margin-top: 64px;
+    margin-left: 73px;
+    width: 170px;
+    height: 48px;
+    display: inline-block;
+}
+
+
+.footer {
+    padding-left: 23px;
+    margin-top: 112px;
+    height: 1184px;
+    width: 100%;
+    background-color: #494949;
+}
+
+.footer-logo {
+    display: block;
+    padding-top: 76px;
+    color: #fff;
+}
+
+.footer .main-link {
+    padding: 63px 0 32px 0;
+    display: block;
+}
+
+.footer-nav-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.footer-nav-item-link {
+    font-size: 16px;
+    line-height: 32px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-socials {
+    display: flex;
+    align-items: center;
+}
+
+.footer-social {
+    margin-right: 8px;
+    width: 48px;
+    height: 48px;
+    background-color: var(--orange-color);
+    border-radius: 50%;
+    position: relative;
+}
+
+.footer-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.footer-line {
+    display: block;
+    margin-top: 80px;
+    width: 90%;
+    height: 1px;
+    background-color: #fff;
+    opacity: 10%;
+}
+
+.footer .card-text {
+    margin-top: 58px;
+    text-align: center;
+    color: #fff;
+    opacity: 0.5;
+    overflow-wrap: break-word;
+}
+
+.footer .card-text > span {
+    display: block;
+}
+
+.footer-regulations {
+    margin-top: 32px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+@media only screen and (min-width: 640px) {
+    .block-company  {        
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-flow: row-reverse;
     }
 
-    .article-text {
-        margin-top: 15px;
+    .company-rectangle-sm {
+        right: -4%;
     }
 
-    .main-article {
-        margin-top: 45px;
-        border: 1px solid #E6EDF5;
-        padding: 16px 17px 47px 16px;
+    .company-text {
+        max-width: 250px;
     }
 
-    .main-article-img {
-        width: auto;
-        height: 180px;
+    .block-about {        
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 
-    .main-article-heading {
-        margin: 25px 0 13px 0;
+    .about-rectangle-sm-w {
+        right: -9%;
     }
 
-    .article {
-        margin-top: 16px;
-        padding: 16px;
-        width: 329px;
-        border-radius: 8px;
-        border: 1px solid #E6EDF5;
+    .block-about-main {
+        max-width: 250px;
     }
 
-    .article-img {
-        width: auto;
-        height: 210px;
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
     }
 
-    .article-sub-heading{
-        font-weight: bold;
-        color: #333333;
-        font-family: 'Hind Siliguri';
-        margin: 25px 0 39px 0;
-    }
-    .article .card-text {
-        padding: 13px 16px 47px 16px;
-    }
-
-    .latest-articles .articles-btn {
-        margin-top: 64px;
-        margin-left: 73px;
-        width: 170px;
-        height: 48px;
-        display: inline-block;
-    }
-
-
-    .footer {
-        padding-left: 23px;
-        margin-top: 112px;
-        height: 1184px;
-        width: 100%;
-        background-color: #494949;
-    }
-
-    .footer-logo {
-        display: block;
-        padding-top: 76px;
-        color: #fff;
-    }
-
-    .footer .main-link {
-        padding: 63px 0 32px 0;
-        display: block;
-    }
-
-    .footer-nav-items {
+    .block-features {
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
-        flex-direction: column;
+    }
+    .block-features-main {
+        max-width: 250px;
     }
 
-    .footer-nav-item-link {
-        font-size: 16px;
-        line-height: 32px;
-        color: #fff;
-        text-decoration: none;
+    .card-features {
+        max-width: 300px;
     }
 
-    .footer-socials {
-        display: flex;
-        align-items: center;
+    .card-features .card-heading {
+        padding: 0;
+        max-width: 200px;
     }
 
-    .footer-social {
-        margin-right: 8px;
-        width: 48px;
-        height: 48px;
-        background-color: var(--orange-color);
-        border-radius: 50%;
+    .features-rectangle-md {
+        right: 5%;
+    }
+
+    .features-rectangle-sm {
+        right: 1%;
+    }
+
+    .block-portfolio {
         position: relative;
     }
 
-    .footer-icon {
+    .portfolio-cards {
+        display: grid;
+        justify-content: center;
+    }
+
+    .portfolio-btn {
+        margin-left: 0;
         position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        left: 35%;
     }
 
-    .footer-line {
-        display: block;
-        margin-top: 80px;
-        width: 90%;
-        height: 1px;
-        background-color: #fff;
-        opacity: 10%;
+    .portfolio-companies {
+        margin-top: 200px;
+        justify-items: center;
     }
 
-    .footer .card-text {
-        margin-top: 58px;
-        text-align: center;
-        color: #fff;
-        opacity: 0.5;
-        overflow-wrap: break-word;
-    }
-
-    .footer .card-text > span {
-        display: block;
-    }
-
-    .footer-regulations {
-        margin-top: 32px;
+    .block-service {
         display: flex;
-        justify-content: space-around;
-        align-items: center;
+        justify-content: space-between;
+        align-items: flex-start;
     }
 
+    .service-text {
+        margin-top: 15px;
+        max-width: 250px;
+        font-size: 16px;
+    }
+
+    .service-video {
+        max-height: 700px;
+    }
+
+}
 
 
 
@@ -1613,6 +1716,8 @@ margin-top: 54px;
     }
 
     .about-oval-img {
+        max-width: 100%;
+        max-height: 100%;
         position: absolute;
         left: 50%;
         top: 50%;
@@ -1620,6 +1725,8 @@ margin-top: 54px;
     }
 
     .about-checkmark-icon {
+        max-width: 100%;
+        max-height: 100%;
         position: absolute;
         left: 50%;
         top: 50%;
@@ -2106,7 +2213,10 @@ margin-top: 54px;
     }
 
     .carousel-img {
-        padding-left: 16px;
+        padding: 16px 16px 25px 16px;
+        width: 100%;
+        height: auto;
+        border-radius: 20px 20px 50px 20px;
     }
 
     .slider-team .sub-heading,
@@ -2250,6 +2360,8 @@ margin-top: 54px;
     }
 
     .kickstart-img {
+        max-width: 100%;
+        max-height: 100%;
         position: absolute;
         top: 95%;
         left: 50%;
@@ -2460,7 +2572,7 @@ margin-top: 54px;
 }
 
 
-@media screen and (min-width: 1800px) {
+@media only  screen and (min-width: 1800px) {
     .header-inner {
         padding: 0 350px;
     }
