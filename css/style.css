@@ -952,7 +952,10 @@ margin-top: 54px;
 }
 
 .carousel-img {
-    padding-left: 16px;
+    padding: 16px 16px 25px 16px;
+    max-width: 100%;
+    max-height: auto;
+    border-radius: 20px 20px 50px 20px;
 }
 
 .slider-team .sub-heading,
@@ -1146,8 +1149,8 @@ top: 170px;
 }
 
 .main-article-img {
-    width: auto;
-    height: 180px;
+    max-width: auto;
+    max-height: 180px;
 }
 
 .main-article-heading {
@@ -1364,6 +1367,81 @@ top: 170px;
 
     .service-video {
         max-height: 700px;
+    }
+
+    .carousel-mob {
+        margin: 40px auto;
+    }
+
+    .block-testimonials {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .reviews {
+        max-width: 250px;
+    }
+
+    .review .card-text {
+        text-overflow: ellipsis;
+        overflow: hidden;
+        -webkit-line-clamp: 6;
+        display: -webkit-box;
+        word-wrap: break-word;
+        -webkit-box-orient: vertical;
+    }
+
+    .slick-next:before {
+        right: 100px;
+    }
+
+    .slick-prev:before {
+        left: 93px;
+    }
+
+    .main-article-img {
+        max-height: 100%;
+        max-width: 100%;
+    }
+
+    .articles {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+}
+
+@media only screen and (min-width: 1024px) {
+
+    .header-inner {
+        padding: 0 100px;
+    }
+
+    .burger-icon {
+        display: none;
+    }
+
+    .nav {
+        display: flex;
+    }
+
+    .nav-items {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav-item-link {
+        margin-right: 54px;
+        text-decoration: none;
+        color: var(--black-color); 
+    }
+
+    .header-inner .header-btn {
+        display: inline-block;
     }
 
 }
@@ -1643,8 +1721,11 @@ top: 170px;
         color: var(--green-color);
     }
 
+    .company-text {
+        max-width: 100%;
+    }
+
     .main-text {
-        padding: 32px 0;
         font-size: 20px;
         font-family: 'Work Sans';
         line-height: 32px;
@@ -1747,6 +1828,10 @@ top: 170px;
         transform: translate(-50%, -50%);
     }
 
+    .block-about-main {
+        max-width: 100%;
+    }
+
     .about-heading {
         margin-top: 20px;
         font-size: 56px;
@@ -1823,6 +1908,10 @@ top: 170px;
         align-items: center;
     }
 
+    .block-features-main {
+        max-width: 100%;
+    }
+
     .block-features .block-rectangles {
         position: relative;
     }
@@ -1838,6 +1927,7 @@ top: 170px;
     }
 
     .card-features {
+        max-width: 100%;
         margin-top: 21px;
         padding: 25px 40px 0 32px;
         width: 470px;
@@ -2032,6 +2122,10 @@ top: 170px;
 
     .service-heading {
         font-size: 56px;
+    }
+
+    .service-text {
+        max-width: 100%;
     }
 
     .service-client {
