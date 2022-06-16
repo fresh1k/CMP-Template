@@ -588,8 +588,8 @@ margin-top: 54px;
 .card-features {
     padding: 25px 35px 0 32px;
     margin: 13px 0 79px 0;
-    width: 329px;
-    height: 160px;
+    max-width: 329px;
+    max-height: 160px;
     box-shadow: 0px 24px 48px rgba(0, 17, 86, 0.0799083);
     border-radius: 8px;
 }
@@ -1034,8 +1034,8 @@ margin-top: 54px;
 
 .reviews {
     padding: 27px 46px 25px 32px;
-    width: 329px;
-    height: 288px;
+    max-width: 329px;
+    max-height: 288px;
     box-shadow: 0px 24px 48px rgba(0, 17, 86, 0.0799083);
     border-radius: 8px;
     background-image: url('../icons/kovichki-icon.svg');
@@ -1078,8 +1078,8 @@ top: 170px;
 .kickstart {
     margin: 144px auto;
     padding: 60px 56px 0 56px;
-    width: 329px;
-    height: 768px;
+    max-width: 329px;
+    max-height: 768px;
     border-radius: 8px;
     background-color: var(--orange-color);
     position: relative;
@@ -1094,7 +1094,7 @@ top: 170px;
     color: var(--black-color);
 }
 
-.kickstart .card-text {
+.kickstart-text {
     padding-top: 59px;
     color: #fff;
 }
@@ -1149,7 +1149,7 @@ top: 170px;
 }
 
 .main-article-img {
-    max-width: auto;
+    width: auto;
     max-height: 180px;
 }
 
@@ -1160,14 +1160,14 @@ top: 170px;
 .article {
     margin-top: 16px;
     padding: 16px;
-    width: 329px;
+    max-width: 329px;
     border-radius: 8px;
     border: 1px solid #E6EDF5;
 }
 
 .article-img {
     width: auto;
-    height: 210px;
+    max-height: 210px;
 }
 
 .article-sub-heading{
@@ -1406,10 +1406,8 @@ top: 170px;
     }
 
     .articles {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
+        display: grid;
+        justify-items: center;
     }
 
 }
@@ -1444,6 +1442,178 @@ top: 170px;
         display: inline-block;
     }
 
+    .block-company {
+        padding: 0 120px;
+    }
+
+    .company-text {
+        max-width: 350px;
+    }
+
+    .block-about {
+        padding: 0 120px;
+    }
+
+    .block-about-main {
+        max-width: 100%;
+    }
+
+    .block-features {
+        padding: 0 120px;
+    }
+
+    .block-features-main {
+        max-width: 100%;
+    }
+
+    .features-text {
+        max-width: 400px;
+    }
+
+    .card-features {
+        max-width: 100%;
+        width: 400px;
+        height: 144px;
+    }
+
+    .portfolio-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
+
+    .portfolio-card-bg {
+        width: 450px;
+        height: 320px;
+    }
+
+    .portfolio-btn {
+        left: 42%;
+    }
+
+    .portfolio-companies {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .block-service {
+        padding: 0 120px;
+    }
+
+    .service-text {
+        max-width: 350px;
+    }
+
+    .service-video {
+        position: relative;
+    }
+
+    .service-video-img {
+        position: absolute;
+        top: 10%;
+    }
+
+    .service-video-heading {
+        position: absolute;
+        right: 22%;
+        top: 35%;
+    }
+
+    .service-video-text {
+        position: absolute;
+        right: 10%;
+        top: 50%;
+    }
+
+    .carousel-mob {
+        display: none;
+    }
+
+    .carousel-desk {
+        margin-top: 77px;
+        display: block;
+    }
+
+    .block-testimonials {
+        padding: 0 120px;
+    }
+
+    .reviews {
+        max-width: 400px;
+    }
+
+    .slick-prev:before {
+        left: 30px;
+    }
+
+    .slick-next:before {
+        right: 315px;
+    }
+
+    .kickstart {
+        max-width: 100%;
+        height: 448px;
+        position: relative;
+    }
+
+    .kickstart-text {
+        position: absolute;
+        left: 35%;
+        top: 8%;
+    }
+
+    .kickstart-img {
+        left: 40%;
+    }
+
+    .newsletter {
+        padding: 0 120px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .newsletter-heading {
+        max-width: 100%;
+    }
+
+    .newsletter-form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .newsletter-input {
+        margin-top: 0;
+    }
+
+    .newsletter-btn {
+        margin: 0 0 0 30px;
+    }
+
+    .main-article {
+        position: relative;
+    }
+
+    .latest-articles {
+        /* padding: 0; */
+    }
+
+    .main-article-heading {
+        max-width: 350px;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .main-article-text {
+        position: absolute;
+        right: 1%;
+        bottom: 25%;
+    }
+
+    .articles {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 
@@ -1927,7 +2097,6 @@ top: 170px;
     }
 
     .card-features {
-        max-width: 100%;
         margin-top: 21px;
         padding: 25px 40px 0 32px;
         width: 470px;
@@ -2262,7 +2431,7 @@ top: 170px;
         top: 22%;
     }
 
-    .service-video .main-text {
+    .service-video-text{
         padding: 0;
         color: #fff;
         position: absolute;
@@ -2384,8 +2553,8 @@ top: 170px;
 
     .reviews {
         padding: 27px 46px 25px 32px;
-        width: 470px;
-        height: 224px;
+        max-width: 470px;
+        max-height: 224px;
         box-shadow: 0px 24px 48px rgba(0, 17, 86, 0.0799083);
         border-radius: 8px;
         background-image: url('../icons/kovichki-icon.svg');
@@ -2515,10 +2684,11 @@ top: 170px;
 
     .main-article-img {
         padding: 16px 0 16px 16px;
-        height: 336px;
+        max-height: 336px;
     }
 
     .main-article-heading {
+        max-width: 500px;
         line-height: 40px;
         font-size: 40px;
         position: absolute;
@@ -2526,23 +2696,26 @@ top: 170px;
         top: 60px;
     }
     .main-article-text {
-        width: 494px;
+        max-width: 500px;
         overflow-wrap: break-word;
         padding: 0;
         position: absolute;
-        right: 30px;
-        top: 170px;
+        right: 9%;
+        top: 55%;
     }
 
     .articles {
         display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
         position: relative;
     }
 
     .article {
         margin: 32px 30px 243px 0;
-        width: 370px;
-        height: 384px;
+        max-width: 370px;
+        max-height: 384px;
         padding: 0;
         border-radius: 8px;
         border: 1px solid #E6EDF5;
@@ -2553,11 +2726,11 @@ top: 170px;
     }
 
     .article-img {
-        height: 240px;
+        max-height: 240px;
         padding: 16px 16px 25px 16px;
     }
 
-    .article .sub-heading {
+    .article-sub-heading {
         font-family: 'Hind Siliguri';
         padding: 0 32px;
     }
@@ -2565,7 +2738,6 @@ top: 170px;
     .articles-btn {
         display: inline-block;
         position: absolute;
-        bottom: 15%;
         left: 40%;
     }
 
