@@ -586,10 +586,10 @@ margin-top: 54px;
 }
 
 .card-features {
-    padding: 25px 35px 0 32px;
+    padding: 25px 10px;
     margin: 13px 0 79px 0;
     max-width: 329px;
-    max-height: 160px;
+    height: 160px;
     box-shadow: 0px 24px 48px rgba(0, 17, 86, 0.0799083);
     border-radius: 8px;
 }
@@ -744,7 +744,6 @@ margin-top: 54px;
 }
 
 .btn-empty{
-    display: inline-block;
     padding: 15px 33px;
     font-size: 16px;
     font-family: 'Hind Siliguri';
@@ -1079,7 +1078,7 @@ top: 170px;
     margin: 144px auto;
     padding: 60px 56px 0 56px;
     max-width: 329px;
-    max-height: 768px;
+    height: 768px;
     border-radius: 8px;
     background-color: var(--orange-color);
     position: relative;
@@ -1157,6 +1156,10 @@ top: 170px;
     margin: 25px 0 13px 0;
 }
 
+.articles {
+    margin-bottom: 64px;
+}
+
 .article {
     margin-top: 16px;
     padding: 16px;
@@ -1180,12 +1183,10 @@ top: 170px;
     padding: 13px 16px 47px 16px;
 }
 
-.latest-articles .articles-btn {
-    margin-top: 64px;
-    margin-left: 73px;
-    width: 170px;
-    height: 48px;
-    display: inline-block;
+.articles-btn {
+    max-width: 170px;
+    display: block;
+    margin: 0 auto;
 }
 
 
@@ -1513,15 +1514,17 @@ top: 170px;
     }
 
     .service-video-heading {
+        max-width: 100%;
         position: absolute;
-        right: 22%;
+        right: 4%;
         top: 35%;
     }
 
     .service-video-text {
+        max-width: 50%;
         position: absolute;
-        right: 10%;
-        top: 50%;
+        right: 8%;
+        top: 42%;
     }
 
     .carousel-mob {
@@ -1553,6 +1556,10 @@ top: 170px;
         max-width: 100%;
         height: 448px;
         position: relative;
+    }
+
+    .kickstart-heading {
+        max-width: 200px;
     }
 
     .kickstart-text {
@@ -1594,10 +1601,6 @@ top: 170px;
         position: relative;
     }
 
-    .latest-articles {
-        /* padding: 0; */
-    }
-
     .main-article-heading {
         max-width: 350px;
         position: absolute;
@@ -1606,9 +1609,10 @@ top: 170px;
     }
 
     .main-article-text {
+        max-width: 30%;
         position: absolute;
-        right: 1%;
-        bottom: 25%;
+        right: 6%;
+        bottom: 30%;
     }
 
     .articles {
@@ -2427,15 +2431,16 @@ top: 170px;
         font-size: 56px;
         color: #fff;
         position: absolute;
-        left: 50%;
+        left: 43%;
         top: 22%;
     }
 
     .service-video-text{
+        max-width: 500px;
         padding: 0;
         color: #fff;
         position: absolute;
-        left: 50%;
+        left: 43%;
         top: 60%;
     }
 
@@ -2604,6 +2609,7 @@ top: 170px;
         position: relative;
     }
     .kickstart-heading {
+        max-width: 246px;
         font-size: 56px;
         color: #fff;
     }
@@ -2713,7 +2719,7 @@ top: 170px;
     }
 
     .article {
-        margin: 32px 30px 243px 0;
+        margin: 32px 30px 60px 0;
         max-width: 370px;
         max-height: 384px;
         padding: 0;
@@ -2736,9 +2742,9 @@ top: 170px;
     }
 
     .articles-btn {
-        display: inline-block;
-        position: absolute;
-        left: 40%;
+        display: block;
+        max-width: 170px;
+        margin: 0 auto;
     }
 
     .footer {
